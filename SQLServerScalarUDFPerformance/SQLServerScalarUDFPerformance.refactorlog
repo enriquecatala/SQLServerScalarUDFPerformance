@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="2098213d-ee8b-4f95-a84d-891abcfbce78" ChangeDateTime="07/29/2016 11:48:35">
+    <Property Name="ElementName" Value="[dbo].[Numbers_OnDisk].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Numbers_OnDisk]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="n" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bf39329f-0317-4bcd-80f7-79ae95a260de" ChangeDateTime="07/29/2016 12:07:24">
+    <Property Name="ElementName" Value="[dbo].[Numbers_InMemory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Numbers_InMemory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="n" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1ddf2f5b-068b-47c7-9a84-39575409d8a0" ChangeDateTime="07/29/2016 12:57:35">
+    <Property Name="ElementName" Value="[inmemory].[Numbers_InMemoryHASH].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[inmemory].[Numbers_InMemoryHASH]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="n" />
+  </Operation>
+</Operations>

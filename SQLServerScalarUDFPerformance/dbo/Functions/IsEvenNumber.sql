@@ -1,0 +1,11 @@
+﻿CREATE FUNCTION [dbo].IsSumEvenNumber
+(
+	@num INT,
+	@num2 int
+)
+RETURNS int
+WITH SCHEMABINDING
+AS
+BEGIN
+	RETURN (CASE WHEN (@num+@num2) %2 = 0 THEN 1 ELSE 0 END);
+END
