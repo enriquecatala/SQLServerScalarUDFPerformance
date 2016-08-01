@@ -88,6 +88,8 @@
     <Build Include="inmemory\Stored Procedures\sp_inmemory_IsEvenNumber_using_udf.sql" />
     <Build Include="inmemory\Stored Procedures\sp_inmemory_IsEvenNumber_expanded_manually.sql" />
     <Build Include="inmemory\User Defined Types\IsEvenNumberResultType.sql" />
+    <Build Include="dbo\Functions\DummyCalculation.sql" />
+    <Build Include="inmemory\Functions\DummyCalculationInMemory.sql" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -96,11 +98,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clr\Functions\IsEvenNumberClr.cs" />
+    <Compile Include="clr\Functions\DummyCalculation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLServerScalarUDFPerformance.publish.xml" />
     <None Include="TESTS-PERFORMANCE\TESTING PERFORMANCE.sql" />
     <None Include="Miscelaneous\Timing.xlsx" />
+    <None Include="TESTS-PERFORMANCE\TESTS-PERFORMANCE-DUMMYCALCULATIONS.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SQLServerScalarUDFPerformance.refactorlog" />
