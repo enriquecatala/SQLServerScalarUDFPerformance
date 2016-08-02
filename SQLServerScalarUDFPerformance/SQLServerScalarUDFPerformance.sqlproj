@@ -90,6 +90,11 @@
     <Build Include="inmemory\User Defined Types\IsEvenNumberResultType.sql" />
     <Build Include="dbo\Functions\DummyCalculation.sql" />
     <Build Include="inmemory\Functions\DummyCalculationInMemory.sql" />
+    <Build Include="dbo\Tables\Random_Strings.sql" />
+    <Build Include="inmemory\Tables\Random_Strings_InMemoryHASH.sql" />
+    <Build Include="dbo\Functions\DummyCalculationWithDataAccess.sql" />
+    <Build Include="inmemory\Functions\DummyCalculationWithDataAccess.sql" />
+    <Build Include="inmemory\Stored Procedures\sp_inmemory_DummyCalculationWithDataAccess_using_udf.sql" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -99,12 +104,14 @@
   <ItemGroup>
     <Compile Include="clr\Functions\IsEvenNumberClr.cs" />
     <Compile Include="clr\Functions\DummyCalculation.cs" />
+    <Compile Include="clr\Functions\DummyCalculationWithDataAccessClr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLServerScalarUDFPerformance.publish.xml" />
     <None Include="TESTS-PERFORMANCE\TESTING PERFORMANCE.sql" />
     <None Include="Miscelaneous\Timing.xlsx" />
     <None Include="TESTS-PERFORMANCE\TESTS-PERFORMANCE-DUMMYCALCULATIONS.sql" />
+    <None Include="TESTS-PERFORMANCE\TESTS-PERFORMANCE-DUMMYCALCULATIONS-WITH-DATAACCESS.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SQLServerScalarUDFPerformance.refactorlog" />

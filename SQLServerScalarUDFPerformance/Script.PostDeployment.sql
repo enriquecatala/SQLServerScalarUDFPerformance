@@ -29,3 +29,22 @@ BEGIN
 	SELECT  n,n+3 FROM dbo.fn_nums(1000000)
 END
 GO 
+IF(NOT EXISTS(SELECT 1 FROM dbo.Random_Strings))
+BEGIN
+	DECLARE @AlLChars VARCHAR(100) = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+	  
+	INSERT INTO dbo.Random_Strings
+	SELECT n, 
+		   REVERSE(LEFT(@AlLChars, ABS(BINARY_CHECKSUM(NEWID()) % 35) + 1)), 
+		   RIGHT(@AlLChars, ABS(BINARY_CHECKSUM(NEWID()) % 35) + 1)
+	FROM dbo.fn_nums(1000000)
+	
+END
+GO
+IF(NOT EXISTS(SELECT 1 FROM inmemory.Random_Strings_InMemoryHASH))
+BEGIN
+	-- inserting same data
+	INSERT INTO inmemory.Random_Strings_InMemoryHASH
+	SELECT * FROM dbo.Random_Strings
+	
+END
