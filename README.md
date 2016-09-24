@@ -13,6 +13,6 @@ Conclusions are written in the following posts:
 
 1. http://blogs.solidq.com/es/sql-server/rendimiento-funciones-escalares-udf-12/
 
-2. In the making...
+2. http://blogs.solidq.com/es/dotnet_es/rendimiento-funciones-escalares-udf-22/
 
 For more info, please visit http://www.enriquecatala.com
